@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Júlia Alves Garcia</title>
-    <a href="#sobre">Sobre mim</a>
-    <a href="#contato">Contatos</a>
 </head>
 
 <body>
@@ -117,9 +116,66 @@
             
             Desenvolva Habilidades de Resolução de Problemas: Aprenda a resolver problemas complexos.</p>
             <h2>Todo o conteúdo dessa página foi extraído do CHAT GPT e que o autor da página foi responsável apenas pela edição e adaptação do conteúdo.</h2>
-    </main>
+
+        
+        </main>
+        <div id="scroll-to-top" style="display: flex;flex-direction:row;justify-content:end;align-items: end; font-size:50px;text-decoration: none;">
+            <a href="#" title="Voltar ao topo" style="text-decoration: none; text-align:end;    display: flex;
+            flex-direction: row;
+            justify-content: end;">↑</a>
+        </div>
+        <!-- Adicione isso antes da tag </body> -->
+    <script>
+        // Função para fazer a rolagem suave para as seções da página
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop - 50, // Ajuste o valor para a altura do seu cabeçalho
+                    behavior: 'smooth',
+                });
+            }
+        }
+    
+        // Adicionar um evento de clique para os links de navegação
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetSectionId = link.getAttribute('href');
+                scrollToSection(targetSectionId);
+            });
+        });
+    
+        // Botão de rolagem para o topo
+        const scrollToTopButton = document.querySelector('#scroll-to-top');
+    
+        // Mostrar ou ocultar o botão com base na posição da página
+        function toggleScrollToTopButton() {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        }
+    
+        // Adicionar um evento de rolagem para mostrar/ocultar o botão
+        window.addEventListener('scroll', toggleScrollToTopButton);
+    
+        // Função para rolar suavemente para o topo
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
+    
+        // Adicionar um evento de clique para o botão de rolagem para o topo
+        scrollToTopButton.addEventListener('click', scrollToTop);
+    </script>
     <footer>
         <h1>Julia Alves Garcia-2023</h1>
     </footer>
+    
 </body>
 </html>

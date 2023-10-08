@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Reset de margens e preenchimentos padrão */
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #ff6b80; /* Cor de fundo rosa suave */
+    color: #fff; /* Cor do texto branco */
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+/* Estilo do logo no cabeçalho */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Estilo dos links de navegação */
+nav a {
+    text-decoration: none;
+    color: #ff6b80; /* Cor do link rosa */
+    margin: 0 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    transition: color 0.3s; /* Transição suave da cor do link */
+}
+
+nav a:hover {
+    color: #ff4057; /* Cor de destaque rosa mais escura */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo dos artigos */
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo dos títulos dos artigos */
+article h2 {
+    color: #333; /* Cor do título cinza escuro */
+    font-size: 24px;
+    margin-top:30px;
+}
+
+/* Estilo dos parágrafos */
+article p {
+    color: #666; /* Cor do texto cinza */
+    line-height: 1.6;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #ff6b80; /* Cor de fundo rosa suave */
+    color: #fff; /* Cor do texto branco */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo do link no rodapé */
+footer a {
+    color: #fff; /* Cor do link branco no rodapé */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo do link no rodapé ao passar o mouse */
+footer a:hover {
+    text-decoration: underline;
+}
